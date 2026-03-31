@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact createMPLS</title>
+  <meta name="description" content="Contact createMPLS about school partnerships, volunteering, sponsorship, donations, or general questions.">
+  <meta property="og:title" content="Contact createMPLS">
+  <meta property="og:description" content="Reach createMPLS about partnerships, volunteering, sponsorship, donations, and general inquiries.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#102236">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header class="site-header" data-site-header>
+    <div class="container">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="createMPLS home">
+          <span class="brand__create">create</span><span class="brand__mpls">MPLS</span>
+        </a>
+        <button class="site-nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <div class="site-nav__menu" data-nav-menu>
+          <ul class="site-nav__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="button button--primary button--small" href="https://givebutter.com/creatempls" target="_blank" rel="noopener">Donate</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-content-block="contact-hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Contact</div>
+            <h1>Start with the path that matches why you are reaching out.</h1>
+            <p>School and community partnership questions come first here, but volunteers, donors, sponsors, and general supporters can use the same form without extra friction.</p>
+          </div>
+          <aside class="surface-card reveal">
+            <span class="card-label">Quick routes</span>
+            <div class="stack">
+              <a class="button button--secondary" href="?interest=school_partnership#contact-form">School or community partner</a>
+              <a class="button button--secondary" href="?interest=volunteering#contact-form">Volunteer</a>
+              <a class="button button--secondary" href="?interest=donation_info#contact-form">Donor or sponsor</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--paper" data-content-block="contact-form">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card surface-card--dark reveal">
+            <div class="stack">
+              <div class="eyebrow">Direct contact</div>
+              <h2 class="section-heading">Reach createMPLS directly or use the form.</h2>
+              <p class="section-lead">You can reach createMPLS directly by email or use the form if you want to send a more structured inquiry about partnership, volunteering, or support.</p>
+            </div>
+
+            <div class="contact-card__detail">
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@creatempls.org">info@creatempls.org</a>
+              </div>
+              <div>
+                <strong>Mailing address</strong>
+                <span>P.O. Box 8521, Minneapolis, MN</span>
+              </div>
+              <div>
+                <strong>Tax status</strong>
+                <span>501(c)(3) | EIN 47-5122723</span>
+              </div>
+              <div>
+                <strong>Social</strong>
+                <span><a href="https://www.linkedin.com/company/creatempls" target="_blank" rel="noopener">LinkedIn</a> | <a href="https://www.facebook.com/MPLScreate/" target="_blank" rel="noopener">Facebook</a></span>
+              </div>
+            </div>
+
+            <div class="spotlight">
+              <h3>Good reasons to reach out</h3>
+              <div class="spotlight__meta">
+                <span>school partnership</span>
+                <span>community program</span>
+                <span>volunteer support</span>
+                <span>sponsorship</span>
+                <span>tour request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-wrap reveal delay-1" id="contact-form">
+            <h2>Contact form</h2>
+            <p>Use the form if you want your inquiry routed with a little context up front.</p>
+
+            <form id="contactForm" action="https://formsubmit.co/Tracy+websiteform@creatempls.org" method="POST">
+              <input type="hidden" name="_subject" value="New Inquiry from createMPLS Website">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" id="formNext" name="_next" value="">
+
+              <div class="hp-field" aria-hidden="true">
+                <label for="hp_website">Website</label>
+                <input type="text" name="_honey" id="hp_website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full name *</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="organization">Organization</label>
+                  <input type="text" id="organization" name="organization" placeholder="School, company, or nonprofit">
+                </div>
+                <div class="form-group">
+                  <label for="interest">I am reaching out about</label>
+                  <select id="interest" name="interest">
+                    <option value="">Select one</option>
+                    <option value="school_partnership">School or community partnership</option>
+                    <option value="volunteering">Volunteering</option>
+                    <option value="corporate_sponsorship">Corporate sponsorship</option>
+                    <option value="donation_info">Donation or fundraising support</option>
+                    <option value="tour">Scheduling a tour</option>
+                    <option value="general">General inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Tell createMPLS what you are hoping to do, support, or learn."></textarea>
+              </div>
+
+              <div class="form-note">If you prefer not to use the form, you can always email <a href="mailto:info@creatempls.org">info@creatempls.org</a> directly.</div>
+
+              <div class="captcha-row">
+                <span id="captchaQuestion">What is 1 + 1?</span>
+                <input type="text" id="captchaAnswer" inputmode="numeric" autocomplete="off" required aria-label="Captcha answer">
+              </div>
+
+              <button class="button button--primary" type="submit" id="submitButton">Send message</button>
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+            </form>
+
+            <div class="success-panel" id="sentConfirmation">
+              <div class="status-note">Your message was sent. createMPLS should follow up using the information you provided.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" data-content-block="contact-notes">
+      <div class="container">
+        <div class="proof-grid">
+          <article class="proof-card reveal">
+            <span class="card-label">Tours</span>
+            <h3>Want to see a program in action?</h3>
+            <p>Mention a tour in your message if you want to talk through what a classroom or site visit could look like.</p>
+          </article>
+          <article class="proof-card reveal delay-1">
+            <span class="card-label">Partners</span>
+            <h3>Schools can be explicit about scheduling needs</h3>
+            <p>The form is structured so schools and community organizations can immediately communicate setting and timing context.</p>
+          </article>
+          <article class="proof-card reveal delay-2">
+            <span class="card-label">Supporters</span>
+            <h3>Donors can still move directly to giving</h3>
+            <p>If you already know you want to give, the donation path remains a direct link to Givebutter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h3 class="brand"><span class="brand__create">create</span><span class="brand__mpls">MPLS</span></h3>
+          <p>Hands-on STEM access for students underserved by the tech-education system, built through school and community partnership.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html?interest=school_partnership#contact-form">School partnership</a></li>
+            <li><a href="contact.html?interest=volunteering#contact-form">Volunteer</a></li>
+            <li><a href="https://givebutter.com/creatempls" target="_blank" rel="noopener">Donate</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:info@creatempls.org">info@creatempls.org</a></li>
+            <li><a href="https://www.linkedin.com/company/creatempls" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/MPLScreate/" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 createMPLS | 501(c)(3) | EIN 47-5122723</span>
+        <a href="contact.html">Contact createMPLS</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
