@@ -297,12 +297,21 @@ button {
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.2rem;
+  align-items: center;
+  gap: 0.55rem;
   font-family: 'Sora', sans-serif;
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.05em;
+}
+
+.brand__logo {
+  width: auto;
+  height: 2.75rem;
+}
+
+.site-footer .brand__logo {
+  height: 3rem;
 }
 
 .brand__create {
@@ -1138,6 +1147,10 @@ button {
 
   .site-nav__links a {
     justify-content: center;
+  }
+
+  .brand__logo {
+    height: 2.45rem;
   }
 }
 
