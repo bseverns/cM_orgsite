@@ -43,10 +43,12 @@ Then open `http://localhost:8000`.
 - School and community partnerships are the primary CTA path across the site.
 - "Tech Together" style campaign framing has been removed from the public-facing copy.
 - Provisional trust markers were softened or removed so the site does not depend on unverified numbers or accolades.
+- Donation remains available through page-level CTA sections and the footer rather than as a primary-nav button.
 
 ## Current Assumptions
 
 - The five-page information architecture remains the v1 site map.
-- The current Givebutter and FormSubmit integrations stay in place for now.
+- The current Givebutter integration stays in place for now.
+- The contact form still uses FormSubmit, but it now routes through the general `info@creatempls.org` inbox rather than an individual mailbox.
 - Placeholder illustrations are acceptable until real photos or brand assets are available.
 - Some public facts inherited from earlier materials still need confirmation before a wider launch.

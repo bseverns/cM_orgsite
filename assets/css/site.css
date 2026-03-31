@@ -653,6 +653,7 @@ button {
   border: 1px solid rgba(23, 34, 48, 0.1);
   box-shadow: var(--shadow-sm);
   font-weight: 600;
+  color: var(--ink);
 }
 
 .overlay-note:hover {
@@ -663,6 +664,11 @@ button {
   font-family: 'Sora', sans-serif;
   font-size: 1rem;
   letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.overlay-note span {
+  color: var(--muted);
 }
 
 .overlay-stack {

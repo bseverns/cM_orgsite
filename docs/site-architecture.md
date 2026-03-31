@@ -80,6 +80,7 @@ Exceptions:
 
 - `Get Involved` can surface all three support paths evenly.
 - `Contact` should optimize for inquiry completion.
+- Donation can remain visible in page sections and the footer, but it should not outrank partnership in the primary nav chrome.
 
 ## Editorial Boundaries
 
