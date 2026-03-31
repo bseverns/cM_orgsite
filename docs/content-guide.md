@@ -4,62 +4,77 @@
 
 Target tone:
 
-- measured
+- calm
 - direct
-- community-rooted
+- local
 - credible
-- specific about inequity without sounding inflated or performative
+- partnership-ready
+- specific without sounding inflated
 
-The site should sound like an organization that knows the problem clearly and is already doing the work.
+The public site should sound like a small organization doing real work with real partners. It should not read like a campaign, a startup pitch, or a speculative nonprofit brochure.
 
 ## Core Message
 
 Preferred framing:
 
-- createMPLS closes access gaps in STEM education.
-- The organization serves students who are underserved by schools and systems.
-- Programs are delivered where students already are.
-- Cost, transportation, and exposure barriers matter and should be named plainly.
+- createMPLS delivers hands-on STEM programs for students.
+- The primary path into the work is through school and community partnerships.
+- Programs are designed for real school-day and enrichment settings.
+- No-cost participation for students and families is part of the operating model.
+- Unequal access can be named plainly, but the site should stay grounded in what createMPLS actually does.
+
+## Public-Site Priorities
+
+- Keep youth-facing programming at the center.
+- Do not foreground educator training, conferences, or AI-in-education themes on the public site.
+- Do not revive "Tech Together" or other initiative-brand framing.
+- Lead with partner usefulness: what a school or community site can expect, what students do, and how to start.
 
 ## Phrases To Prefer
 
-- hands-on STEM learning
-- students underserved by the tech-education system
+- hands-on STEM programs
 - school and community partnerships
-- no cost to students and families
-- local, direct-service nonprofit
-- access gap
-- opportunity gap
+- no-cost participation
+- students and families
+- schools, classrooms, youth programs, community sites
+- robotics, coding, engineering, project-based learning
+- local nonprofit
+- practical next step
 
 ## Phrases To Use Carefully
 
-These are not banned, but they should not dominate the site:
+These are not banned, but they should stay rare:
 
-- future of work
-- pipeline
-- empower
-- transform
-- underserved communities
+- access
+- belonging
+- equity
+- underserved
+- opportunity
 
-Use them only when they add precision instead of sounding generic.
+Use them when they add precision. Do not let them replace clear descriptions of programs, sites, and student experience.
 
 ## Phrases To Avoid
 
+- educator-training emphasis in top-level page copy
+- AI conference or educator-professional-development framing
+- "Tech Together" campaign language or sub-brand language
 - savior language
-- exaggerated claims about outcomes without evidence
-- vague startup language
-- copy that sounds national when the organization is locally rooted
+- vague futurism
+- inflated systems language
+- unverified impact claims, metrics, or accolades
 
-## Facts That Need Verification
+## Fact Discipline
 
-The current redesign still uses some facts inherited from the previous version of the site. Verify these before a broader public launch:
+The public site should not depend on provisional proof points. If a fact is not confirmed, either remove it or rewrite it so the page still works without it.
+
+Items previously treated as provisional:
 
 - `14+` partner schools and community sites
-- metro communities listed across Minneapolis, St. Paul, Bloomington, Edina, Brooklyn Park, and Corcoran Park
+- specific neighborhood or metro community lists
 - `2023 Tekne Award Finalist`
-- any student-count or hours-per-student claims if reintroduced later
+- any student-count, hours-served, or similar scale claims
 
-Stable items that appear consistent with the previous site:
+Stable items that still appear consistent with current materials:
 
 - Givebutter donation link
 - `info@creatempls.org`
@@ -68,11 +83,12 @@ Stable items that appear consistent with the previous site:
 
 ## Editing Rules
 
-1. Keep homepage copy audience-first: schools and community partners come before donors.
-2. Use specific nouns: students, schools, classrooms, community sites, instructors, volunteers.
-3. Favor short paragraphs and concrete verbs.
-4. If a number or accolade is not verified, either remove it or move it to draft notes until confirmed.
-5. When updating one CTA label, check the same CTA path across the other pages for consistency.
+1. Keep schools and community organizations as the primary audience.
+2. Use concrete nouns: students, schools, classrooms, youth programs, instructors, volunteers, families.
+3. Favor short paragraphs, plain verbs, and realistic claims.
+4. If a number or accolade is unverified, remove it or generalize it.
+5. Keep no-cost access visible across the site.
+6. When updating CTA copy, check the same path across all pages for consistency.
 
 ## Placeholder Asset Guidance
 

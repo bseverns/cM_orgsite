@@ -2,7 +2,7 @@
 
 ## Core Intent
 
-The site should feel credible, local, and direct. It is not a generic nonprofit brochure. It should make it easy for schools and community organizations to understand what createMPLS does, who it serves, and how to start a partnership.
+The site should feel credible, local, and direct. It is not a generic nonprofit brochure, a campaign page, or a brand exercise. It should make it easy for schools and community organizations to understand what createMPLS does, who it serves, and how to start a partnership.
 
 Primary audience:
 
@@ -18,34 +18,34 @@ Secondary audience:
 
 ### Home
 
-- Lead with mission clarity and the local STEM access problem.
+- Lead with clear youth-program language and a grounded explanation of uneven STEM access.
 - Establish schools and community partners as the first CTA path.
-- Introduce the two program tracks.
-- Provide light proof and clear next actions for partner, volunteer, and donor audiences.
+- Introduce the two core program formats quickly.
+- Provide light trust signals and practical next actions for partners, volunteers, and donors.
 
 ### About
 
 - Explain why createMPLS exists.
-- Frame the problem as structural, not individual.
+- Describe barriers as structural and practical, not individual.
 - Show the operating model, values, and Minneapolis roots.
-- Keep trust markers visible without turning the page into an annual report.
+- Keep trust markers visible without relying on unverified accolades or scale claims.
 
 ### Programs
 
 - Clarify the two core offerings.
 - Show what students actually experience.
-- Explain what a partner school or community site can expect.
+- Explain what a partner school or community site can expect, including basic logistics.
 - Reiterate the no-cost model and access design.
 
 ### Get Involved
 
 - Separate the pathways for partners, volunteers, and donors.
-- Reduce ambiguity about time, fit, and next steps.
+- Reduce ambiguity about fit, realistic asks, and next steps.
 - Keep friction low by routing every path to the contact page or Givebutter.
 
 ### Contact
 
-- Route inquiries by role.
+- Route inquiries by role, with partnership questions first.
 - Preserve direct email and social links.
 - Keep the existing FormSubmit flow, with client-side guidance only.
 
@@ -80,6 +80,13 @@ Exceptions:
 
 - `Get Involved` can surface all three support paths evenly.
 - `Contact` should optimize for inquiry completion.
+
+## Editorial Boundaries
+
+- Keep public pages focused on youth programs, local partnerships, and no-cost access.
+- Do not foreground educator training, AI events, or initiative-brand language.
+- Do not add proof sections that depend on unverified metrics, awards, or community lists.
+- Favor durable statements over time-sensitive claims.
 
 ## Shared Interaction Rules
 
