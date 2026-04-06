@@ -1,7 +1,4 @@
 (function () {
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const supportsFinePointer = window.matchMedia('(pointer: fine)');
-
   function setActiveNavLink() {
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('[data-nav-menu] a[href]').forEach((link) => {
@@ -127,55 +124,6 @@
     );
 
     surfaces.forEach((surface) => surface.classList.add('magic-surface'));
-
-    if (prefersReducedMotion.matches || !supportsFinePointer.matches) {
-      return;
-    }
-
-    surfaces.forEach((surface) => {
-      surface.addEventListener('pointermove', function (event) {
-        const rect = surface.getBoundingClientRect();
-        const x = ((event.clientX - rect.left) / rect.width) * 100;
-        const y = ((event.clientY - rect.top) / rect.height) * 100;
-        const artShiftX = ((x - 50) / 50) * 3;
-        const artShiftY = ((y - 50) / 50) * 3;
-
-        surface.style.setProperty('--magic-x', x.toFixed(2) + '%');
-        surface.style.setProperty('--magic-y', y.toFixed(2) + '%');
-        surface.style.setProperty('--magic-opacity', '1');
-        surface.style.setProperty('--art-shift-x', artShiftX.toFixed(2) + 'px');
-        surface.style.setProperty('--art-shift-y', artShiftY.toFixed(2) + 'px');
-      });
-
-      surface.addEventListener('pointerleave', function () {
-        surface.style.setProperty('--magic-opacity', '0');
-        surface.style.setProperty('--art-shift-x', '0px');
-        surface.style.setProperty('--art-shift-y', '0px');
-      });
-    });
-  }
-
-  function setupButtonRipples() {
-    const buttons = document.querySelectorAll('.button');
-
-    if (prefersReducedMotion.matches) {
-      return;
-    }
-
-    buttons.forEach((button) => {
-      button.addEventListener('pointerdown', function (event) {
-        const rect = button.getBoundingClientRect();
-        const ripple = document.createElement('span');
-        ripple.className = 'button-ripple';
-        ripple.style.left = event.clientX - rect.left + 'px';
-        ripple.style.top = event.clientY - rect.top + 'px';
-        button.appendChild(ripple);
-
-        window.setTimeout(function () {
-          ripple.remove();
-        }, 760);
-      });
-    });
   }
 
   function setupContactForm() {
@@ -265,7 +213,6 @@
     setupReveal();
     setupCounters();
     setupMagicSurfaces();
-    setupButtonRipples();
     setupContactForm();
   });
 })();
