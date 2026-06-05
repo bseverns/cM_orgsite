@@ -4,11 +4,16 @@
     document.querySelectorAll('[data-nav-menu] a[href]').forEach((link) => {
       const href = link.getAttribute('href');
       if (!href || href.startsWith('http') || href.startsWith('mailto:')) {
+        link.removeAttribute('aria-current');
         return;
       }
 
-      if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-        link.classList.add('is-active');
+      const isCurrent = href === currentPath || (currentPath === '' && href === 'index.html');
+      link.classList.toggle('is-active', isCurrent);
+      if (isCurrent) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
       }
     });
   }
@@ -17,6 +22,64 @@
     const header = document.querySelector('[data-site-header]');
     const toggle = document.querySelector('[data-nav-toggle]');
     const menu = document.querySelector('[data-nav-menu]');
+    const focusableSelector = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    function getMenuFocusables() {
+      return Array.from(menu.querySelectorAll(focusableSelector)).filter((element) => {
+        return !element.hasAttribute('disabled') && element.offsetParent !== null;
+      });
+    }
+
+    function closeMenu(returnFocus) {
+      if (!menu.classList.contains('is-open')) {
+        return;
+      }
+
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('keydown', onDocumentKeydown);
+
+      if (returnFocus) {
+        toggle.focus();
+      }
+    }
+
+    function onDocumentKeydown(event) {
+      if (!menu.classList.contains('is-open')) {
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeMenu(true);
+        return;
+      }
+
+      if (event.key !== 'Tab') {
+        return;
+      }
+
+      const focusables = getMenuFocusables();
+      if (!focusables.length) {
+        event.preventDefault();
+        toggle.focus();
+        return;
+      }
+
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      const activeElement = document.activeElement;
+
+      if (event.shiftKey) {
+        if (activeElement === first || activeElement === toggle) {
+          event.preventDefault();
+          last.focus();
+        }
+      } else if (activeElement === last || activeElement === toggle) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
 
     const onScroll = function () {
       if (header) {
@@ -34,13 +97,40 @@
     toggle.addEventListener('click', function () {
       const isOpen = menu.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', String(isOpen));
+
+      if (isOpen) {
+        document.addEventListener('keydown', onDocumentKeydown);
+        const firstFocusable = getMenuFocusables()[0];
+        if (firstFocusable) {
+          firstFocusable.focus();
+        }
+      } else {
+        document.removeEventListener('keydown', onDocumentKeydown);
+      }
     });
 
     menu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', function () {
-        menu.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+        closeMenu(false);
       });
+    });
+  }
+
+  function setupExternalLinkHints() {
+    document.querySelectorAll('a[target="_blank"]').forEach((link) => {
+      const href = link.getAttribute('href') || '';
+      if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+        return;
+      }
+
+      if (link.querySelector('.sr-only')) {
+        return;
+      }
+
+      const hint = document.createElement('span');
+      hint.className = 'sr-only';
+      hint.textContent = ' (opens in a new tab)';
+      link.appendChild(hint);
     });
   }
 
@@ -210,6 +300,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     setActiveNavLink();
     setupNav();
+    setupExternalLinkHints();
     setupReveal();
     setupCounters();
     setupMagicSurfaces();

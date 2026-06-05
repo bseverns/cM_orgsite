@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-site-header>
     <div class="container">
       <nav class="site-nav" aria-label="Primary">
@@ -33,7 +34,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="hero" data-content-block="contact-hero">
       <div class="container">
         <div class="contact-grid">
@@ -78,6 +79,7 @@
           <div class="form-wrap reveal delay-1" id="contact-form">
             <h2>Contact form</h2>
             <p>Use the form if you want your inquiry routed with a little context up front.</p>
+            <p class="form-note">Fields marked * are required.</p>
 
             <form id="contactForm" action="https://formsubmit.co/info@creatempls.org" method="POST">
               <input type="hidden" name="_subject" value="New Inquiry from createMPLS Website">
@@ -93,11 +95,11 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full name *</label>
-                  <input type="text" id="name" name="name" required placeholder="Your name">
+                  <input type="text" id="name" name="name" required aria-required="true" placeholder="Your name">
                 </div>
                 <div class="form-group">
                   <label for="email">Email *</label>
-                  <input type="email" id="email" name="email" required placeholder="you@example.com">
+                  <input type="email" id="email" name="email" required aria-required="true" placeholder="you@example.com">
                 </div>
               </div>
 
@@ -122,14 +124,14 @@
 
               <div class="form-group">
                 <label for="message">Message *</label>
-                <textarea id="message" name="message" required placeholder="Tell createMPLS what you are hoping to do, support, or learn."></textarea>
+                <textarea id="message" name="message" required aria-required="true" placeholder="Tell createMPLS what you are hoping to do, support, or learn."></textarea>
               </div>
 
               <div class="form-note">If you prefer not to use the form, you can always email <a href="mailto:info@creatempls.org">info@creatempls.org</a> directly.</div>
 
               <div class="captcha-row">
                 <span id="captchaQuestion">What is 1 + 1?</span>
-                <input type="text" id="captchaAnswer" inputmode="numeric" autocomplete="off" required aria-label="Captcha answer">
+                <input type="text" id="captchaAnswer" inputmode="numeric" autocomplete="off" required aria-required="true" aria-label="Captcha answer">
               </div>
 
               <button class="button button--primary" type="submit" id="submitButton">Send message</button>
@@ -171,7 +173,7 @@
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <h3 class="brand"><img class="brand__logo" src="assets/img/creatempls-logo.png" alt="createMPLS"></h3>
+          <p class="brand"><img class="brand__logo" src="assets/img/creatempls-logo.png" alt="createMPLS"></p>
           <p>Hands-on STEM programs for students, delivered with schools and community partners at no cost to families.</p>
         </div>
         <div>
