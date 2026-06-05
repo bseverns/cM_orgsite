@@ -161,6 +161,32 @@ textarea:focus-visible {
   color: inherit;
 }
 
+.section--ink a:not(.button),
+.surface-card--dark a:not(.button),
+.hero-visual--dark a:not(.button),
+.cta-card--dark a:not(.button),
+.site-footer a:not(.button) {
+  color: rgba(255, 253, 248, 0.96);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 253, 248, 0.42);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+}
+
+.section--ink a:not(.button):hover,
+.section--ink a:not(.button):focus-visible,
+.surface-card--dark a:not(.button):hover,
+.surface-card--dark a:not(.button):focus-visible,
+.hero-visual--dark a:not(.button):hover,
+.hero-visual--dark a:not(.button):focus-visible,
+.cta-card--dark a:not(.button):hover,
+.cta-card--dark a:not(.button):focus-visible,
+.site-footer a:not(.button):hover,
+.site-footer a:not(.button):focus-visible {
+  color: #fffefb;
+  text-decoration-color: currentColor;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -616,6 +642,43 @@ textarea:focus-visible {
   color: inherit;
 }
 
+.surface-card--dark .section-lead {
+  color: rgba(255, 253, 248, 0.82);
+}
+
+.surface-card--dark a {
+  color: rgba(255, 253, 248, 0.96);
+  text-decoration-color: rgba(255, 253, 248, 0.42);
+}
+
+.surface-card--dark a:hover,
+.surface-card--dark a:focus-visible {
+  color: #fffefb;
+  text-decoration-color: currentColor;
+}
+
+.surface-card--dark .contact-card__detail strong {
+  color: rgba(230, 243, 240, 0.92);
+}
+
+.surface-card--dark .contact-card__detail span {
+  color: rgba(255, 253, 248, 0.92);
+}
+
+.surface-card--dark .spotlight {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 253, 248, 0.12);
+}
+
+.surface-card--dark .spotlight h3 {
+  color: rgba(255, 253, 248, 0.98);
+}
+
+.surface-card--dark .spotlight__meta span {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 253, 248, 0.95);
+}
+
 .placeholder-figure {
   border-radius: calc(var(--radius-md) - 8px);
   overflow: hidden;
@@ -1031,6 +1094,7 @@ textarea:focus-visible {
   margin: 0 0 0.9rem;
   font-family: 'Sora', sans-serif;
   letter-spacing: -0.03em;
+  color: var(--paper);
 }
 
 .site-footer .brand {
@@ -1041,7 +1105,7 @@ textarea:focus-visible {
 .site-footer li,
 .site-footer a,
 .site-footer span {
-  color: rgba(255, 253, 248, 0.88);
+  color: rgba(255, 253, 248, 0.92);
 }
 
 .site-footer ul {
