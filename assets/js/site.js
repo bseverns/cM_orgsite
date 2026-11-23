@@ -219,10 +219,8 @@
   function setupContactForm() {
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
-    const successPanel = document.getElementById('sentConfirmation');
     const submitButton = document.getElementById('submitButton');
     const honeypot = document.getElementById('hp_website');
-    const nextField = document.getElementById('formNext');
     const interestField = document.getElementById('interest');
     const url = new URL(window.location.href);
     const interest = url.searchParams.get('interest');
@@ -231,17 +229,6 @@
       interestField.value = interest;
     }
 
-    if (nextField && /^https?:$/.test(window.location.protocol)) {
-      nextField.value = window.location.origin + window.location.pathname + '?sent=true';
-    }
-
-    if (url.searchParams.get('sent') === 'true' && form && successPanel) {
-      form.style.display = 'none';
-      successPanel.classList.add('is-visible');
-      if (window.history && window.history.replaceState) {
-        window.history.replaceState(null, '', window.location.pathname);
-      }
-    }
 
     if (!form) {
       return;
