@@ -1052,15 +1052,6 @@ textarea:focus-visible {
   overflow: hidden;
 }
 
-.success-panel {
-  display: none;
-}
-
-.success-panel.is-visible {
-  display: grid;
-  gap: 0.8rem;
-}
-
 @keyframes metric-pop {
   0% {
     transform: scale(1);
