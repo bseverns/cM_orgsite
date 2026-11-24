@@ -1175,6 +1175,14 @@ textarea:focus-visible {
     border-width: 2px;
   }
 
+  .surface-card--dark,
+  .hero-visual--dark,
+  .cta-card--dark {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+
   .section-lead,
   .hero-copy p,
   .page-hero__copy p,
